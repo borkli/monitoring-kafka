@@ -11,8 +11,9 @@ import java.util.List;
 @AllArgsConstructor
 public class AppMetrics {
 
-    private List<HttpEvent> httpEvents;
-    private List<ExceptionEvent> exceptions;
+    private List<ProductivityReport> productivityReports;
+    private List<HttpReport> httpReports;
+    private List<ExceptionReport> exceptions;
 
     public String toJson() {
         try {

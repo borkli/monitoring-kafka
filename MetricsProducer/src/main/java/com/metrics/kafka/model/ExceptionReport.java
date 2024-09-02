@@ -5,7 +5,7 @@ import lombok.Setter;
 
 @Getter
 @Setter
-public class ExceptionEvent extends Event {
+public class ExceptionReport extends Report {
     private String type;
     private String message;
 }

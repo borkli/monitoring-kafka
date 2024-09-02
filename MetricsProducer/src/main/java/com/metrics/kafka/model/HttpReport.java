@@ -5,8 +5,10 @@ import lombok.Setter;
 
 @Getter
 @Setter
-public class HttpEvent extends Event {
+public class HttpReport extends Report {
     private int statusCode;
+    private String httpMethod;
+    private String url;
     private String request;
     private String response;
 }
