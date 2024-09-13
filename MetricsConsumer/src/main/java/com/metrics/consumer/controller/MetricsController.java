@@ -4,6 +4,7 @@ import com.metrics.consumer.model.ExceptionMetrics;
 import com.metrics.consumer.model.Metrics;
 import com.metrics.consumer.service.ExceptionService;
 import com.metrics.consumer.service.MetricsService;
+import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -13,6 +14,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("consumer/")
+@RequiredArgsConstructor
 public class MetricsController {
 
     private MetricsService metricsService;
